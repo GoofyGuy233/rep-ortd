@@ -1,0 +1,10 @@
+{
+  "build": {
+    "nixpacks": {
+      "phases": {
+        "install": "npm install",
+        "start": "node index.js"
+      }
+    }
+  }
+}
