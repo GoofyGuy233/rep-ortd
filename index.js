@@ -33,3 +33,9 @@ app.post("/discord-interactions", async (req, res) => {
 });
 
 app.listen(3000, () => console.log("Listening for Discord interactions on port 3000"));
+
+const { Client, GatewayIntentBits } = require('discord.js');
+
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+client.login(process.env.DISCORD_TOKEN);
