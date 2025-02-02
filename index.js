@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 const app = express();
 app.use(bodyParser.json());
 
-const PLAYFAB_CLOUDSCRIPT_URL = "https://YOUR_PLAYFAB_CLOUDSCRIPT_URL";
+const PLAYFAB_CLOUDSCRIPT_URL = "https://5A57F.playfabapi.com/CloudScript/ExecuteFunction";
 
 app.post("/discord-interactions", async (req, res) => {
     const interaction = req.body;
